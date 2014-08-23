@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How much money you have?"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/editTextMoney"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editTextMoney"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How much you want to bet?"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/editTextMoney"
+            android:layout_alignLeft="@+id/textView"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editTextBet"
+            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/editTextMoney"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll Dice"
+            android:id="@+id/button"
+            android:layout_below="@+id/imageView"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignRight="@+id/imageView2"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You rolled......."
+            android:id="@+id/textView3"
+            android:layout_below="@+id/editTextBet"
+            android:layout_toRightOf="@+id/textViewDice1"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Dice 1"
+            android:id="@+id/textViewDice1"
+
+            android:layout_gravity="left"
+            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/imageView"/>
+
+
+
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView"
+
+                android:layout_gravity="left"
+                android:layout_below="@+id/textViewDice1"
+                android:layout_alignLeft="@+id/editTextBet"/>
+
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Dice 2"
+                    android:id="@+id/textViewDice2"
+
+                    android:layout_column="3"
+                    android:layout_gravity="right"
+                    android:layout_above="@+id/imageView2"
+                    android:layout_alignRight="@+id/imageView2"/>
+
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageView2"
+
+                    android:layout_column="4"
+                    android:layout_gravity="right"
+                    android:layout_alignTop="@+id/imageView"
+                    android:layout_alignRight="@+id/editTextBet"/>
+
+
+   <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Status Text"
+            android:id="@+id/textViewStatus"
+
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/button"
+            android:layout_alignLeft="@+id/button"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="moneyLeft"
+            android:id="@+id/textViewMoneyLeft"
+
+            android:layout_below="@+id/textView4"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_marginTop="22dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Money left with you"
+            android:id="@+id/textView4"
+
+            android:layout_below="@+id/textViewStatus"
+            android:layout_alignLeft="@+id/textViewStatus"
+            android:layout_marginTop="17dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
